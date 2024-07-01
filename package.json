@@ -1,0 +1,31 @@
+{
+  "name": "atom-automation",
+  "version": "1.0.0",
+  "description": "A simple example of a TypeScript Cucumber-JS project",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "npm install && cucumber-js --format json:report/jsonOutput/results.json --format html:report/cucumberHtmlOutput/cucumber-report.html && ts-node src/multiple-cucumber-html-reporter.ts"
+  },
+  "keywords": [
+    "cucumber",
+    "bdd",
+    "typescript",
+    "example"
+  ],
+  "author": "Atom",
+  "homepage": "https://github.com/cucumber/cucumber-js-examples#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@types/chai": "^4.3.16",
+    "@types/fs-extra": "^11.0.4",
+    "@types/selenium-webdriver": "^4.1.24",
+    "chai": "^5.1.1",
+    "selenium-webdriver": "^4.22.0",
+    "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "moment": "^2.30.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  }
+}
